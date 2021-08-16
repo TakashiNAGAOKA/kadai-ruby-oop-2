@@ -3,8 +3,8 @@ class Mentor
   attr_accessor :name
 
   # 初期化用の特別なメソッド
-  def initialize
-    self.name = "永岡"
+  def initialize(m_name)
+    self.name = m_name
   end
 
   # オブジェクトのメソッド（処理）
@@ -20,10 +20,8 @@ class RailsMentor < Mentor
   end
 end
 
-kirameki = Mentor.new
-kirameki.name = "煌木"
+kirameki = Mentor.new("煌木")
 kirameki.job
-akaide = RailsMentor.new
-akaide.name = "赤出"
+akaide = RailsMentor.new("赤出")
 akaide.job
 
